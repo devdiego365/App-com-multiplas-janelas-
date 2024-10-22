@@ -140,7 +140,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = buttonCancelar;
-            ClientSize = new Size(254, 211);
+            ClientSize = new Size(255, 207);
             Controls.Add(numericUpDownCompra);
             Controls.Add(numericUpDownVenda);
             Controls.Add(textBoxFabricante);

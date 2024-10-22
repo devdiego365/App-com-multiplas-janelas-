@@ -30,7 +30,8 @@
         {
             buttonAdicionarProduto = new Button();
             buttonDeletarProduto = new Button();
-            listBoxProdutos = new ListBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttonAdicionarProduto
@@ -53,26 +54,26 @@
             buttonDeletarProduto.UseVisualStyleBackColor = true;
             buttonDeletarProduto.Click += buttonDeletarProduto_Click;
             // 
-            // listBoxProdutos
+            // dataGridView1
             // 
-            listBoxProdutos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            listBoxProdutos.FormattingEnabled = true;
-            listBoxProdutos.ItemHeight = 15;
-            listBoxProdutos.Location = new Point(0, 58);
-            listBoxProdutos.Name = "listBoxProdutos";
-            listBoxProdutos.Size = new Size(141, 139);
-            listBoxProdutos.TabIndex = 2;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(0, 58);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(621, 331);
+            dataGridView1.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(150, 210);
-            Controls.Add(listBoxProdutos);
+            ClientSize = new Size(551, 385);
+            Controls.Add(dataGridView1);
             Controls.Add(buttonDeletarProduto);
             Controls.Add(buttonAdicionarProduto);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -80,6 +81,6 @@
 
         private Button buttonAdicionarProduto;
         private Button buttonDeletarProduto;
-        private ListBox listBoxProdutos;
+        private DataGridView dataGridView1;
     }
 }
