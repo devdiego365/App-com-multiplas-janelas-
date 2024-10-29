@@ -38,5 +38,11 @@
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void buttonOk_Click_1(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

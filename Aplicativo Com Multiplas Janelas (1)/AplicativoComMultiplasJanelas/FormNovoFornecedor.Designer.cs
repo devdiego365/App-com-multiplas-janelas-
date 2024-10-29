@@ -270,6 +270,7 @@
             buttonOk.TabIndex = 26;
             buttonOk.Text = "Ok";
             buttonOk.UseVisualStyleBackColor = true;
+            buttonOk.Click += buttonOk_Click_1;
             // 
             // FormNovoFornecedor
             // 

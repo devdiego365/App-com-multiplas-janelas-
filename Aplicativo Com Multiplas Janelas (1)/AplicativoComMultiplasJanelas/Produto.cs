@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AplicativoComMultiplasJanelas
 {
-    internal class Produto
+    public class Produto
     {
         [DisplayName("Id")]
         public int Id { get; set; }

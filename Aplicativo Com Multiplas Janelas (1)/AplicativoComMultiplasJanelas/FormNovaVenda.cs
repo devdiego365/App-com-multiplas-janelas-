@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
@@ -11,12 +9,12 @@ using System.Windows.Forms;
 
 namespace AplicativoComMultiplasJanelas
 {
-    public partial class FormNovaCompra : Form
+    public partial class FormNovaVenda : Form
     {
 
-        private BindingList<Fornecedor> Fornecedores { get; set; }
-        private Fornecedor Fornecedor { get { return Fornecedores.FirstOrDefault(f => f.Id == (int)comboBoxFornecedor.SelectedValue); } }
-        public int IdFornecedor { get { return (int)comboBoxFornecedor.SelectedValue; } }
+        private BindingList<Cliente> Clientes { get; set; }
+        private Cliente Cliente { get { return Clientes.FirstOrDefault(f => f.Id == (int)comboBoxCliente.SelectedValue); } }
+        public int IdCliente { get { return (int)comboBoxCliente.SelectedValue; } }
 
         private BindingList<Produto> Produtos { get; set; }
         private Produto Produto { get { return Produtos.FirstOrDefault(p => p.Id == (int)comboBoxProduto.SelectedValue); } }
@@ -31,25 +29,27 @@ namespace AplicativoComMultiplasJanelas
 
 
 
-        public FormNovaCompra(BindingList<Fornecedor> fornecedores, BindingList<Produto> produtos)
+        public FormNovaVenda(BindingList<Cliente> clientes, BindingList<Produto> produtos)
         {
             InitializeComponent();
-            Fornecedores = fornecedores;
-            comboBoxFornecedor.ValueMember = "Id";
-            comboBoxFornecedor.DisplayMember = "NomeEmpresa";
-            comboBoxFornecedor.DataSource = Fornecedores;
-            comboBoxFornecedor.SelectedIndex = 0;
+            Clientes = clientes;
+            comboBoxCliente.ValueMember = "Id";
+            comboBoxCliente.DisplayMember = "NomeEmpresa";
+            comboBoxCliente.DataSource = Clientes;
+            comboBoxCliente.SelectedIndex = 0;
 
             Produtos = produtos;
-            comboBoxFornecedor.ValueMember = "Id";
-            comboBoxFornecedor.DisplayMember = "Nome";
-            comboBoxFornecedor.DataSource = Produtos;
-            comboBoxFornecedor.SelectedIndex = 0;
+            comboBoxCliente.ValueMember = "Id";
+            comboBoxCliente.DisplayMember = "Nome";
+            comboBoxCliente.DataSource = Produtos;
+            comboBoxCliente.SelectedIndex = 0;
 
 
 
 
         }
+
+
 
         private void Ok_Click(object sender, EventArgs e)
         {
@@ -74,6 +74,26 @@ namespace AplicativoComMultiplasJanelas
 
 
             }
+        }
+
+        private void comboBoxCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AtualizarValores();
+        }
+
+        private void comboBoxProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AtualizarValores();
+        }
+
+        private void numericUpDownQuantidade_ValueChanged(object sender, EventArgs e)
+        {
+            AtualizarValores();
+        }
+
+        private void numericUpDownDesconto_ValueChanged(object sender, EventArgs e)
+        {
+            AtualizarValores();
         }
     }
 }

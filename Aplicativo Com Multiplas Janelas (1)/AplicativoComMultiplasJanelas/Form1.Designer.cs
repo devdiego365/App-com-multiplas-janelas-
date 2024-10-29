@@ -1,4 +1,6 @@
-﻿namespace AplicativoComMultiplasJanelas
+﻿
+
+namespace AplicativoComMultiplasJanelas
 {
     partial class Form1
     {
@@ -38,6 +40,12 @@
             buttonVerVendas = new Button();
             buttonAdicionarFornecedor = new Button();
             buttonDeletarFornecedor = new Button();
+            buttonNovoCliente = new Button();
+            buttonDeletarCliente = new Button();
+            buttonNovaCompra = new Button();
+            buttonDeletarCompra = new Button();
+            buttonNovaVenda = new Button();
+            buttonDeletarVenda = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -129,7 +137,7 @@
             buttonAdicionarFornecedor.TabIndex = 0;
             buttonAdicionarFornecedor.Text = "Novo Fornecedor";
             buttonAdicionarFornecedor.UseVisualStyleBackColor = true;
-            buttonAdicionarFornecedor.Click += buttonAdicionarFornecedor_Click;
+            buttonAdicionarFornecedor.Click += buttonNovoFornecedor_Click;
             // 
             // buttonDeletarFornecedor
             // 
@@ -141,11 +149,77 @@
             buttonDeletarFornecedor.UseVisualStyleBackColor = true;
             buttonDeletarFornecedor.Click += buttonDeletarFornecedor_Click;
             // 
+            // buttonNovoCliente
+            // 
+            buttonNovoCliente.Location = new Point(250, 56);
+            buttonNovoCliente.Name = "buttonNovoCliente";
+            buttonNovoCliente.Size = new Size(113, 23);
+            buttonNovoCliente.TabIndex = 5;
+            buttonNovoCliente.Text = "Novo Cliente";
+            buttonNovoCliente.UseVisualStyleBackColor = true;
+            buttonNovoCliente.Click += buttonNovoCliente_Click;
+            // 
+            // buttonDeletarCliente
+            // 
+            buttonDeletarCliente.Location = new Point(250, 80);
+            buttonDeletarCliente.Name = "buttonDeletarCliente";
+            buttonDeletarCliente.Size = new Size(113, 23);
+            buttonDeletarCliente.TabIndex = 6;
+            buttonDeletarCliente.Text = "Deletar Cliente";
+            buttonDeletarCliente.UseVisualStyleBackColor = true;
+            buttonDeletarCliente.Click += buttonDeletarCliente_Click;
+            // 
+            // buttonNovaCompra
+            // 
+            buttonNovaCompra.Location = new Point(369, 56);
+            buttonNovaCompra.Name = "buttonNovaCompra";
+            buttonNovaCompra.Size = new Size(113, 23);
+            buttonNovaCompra.TabIndex = 7;
+            buttonNovaCompra.Text = "Nova Compra";
+            buttonNovaCompra.UseVisualStyleBackColor = true;
+            buttonNovaCompra.Click += buttonAdicionarCompra_Click;
+            // 
+            // buttonDeletarCompra
+            // 
+            buttonDeletarCompra.Location = new Point(369, 80);
+            buttonDeletarCompra.Name = "buttonDeletarCompra";
+            buttonDeletarCompra.Size = new Size(113, 23);
+            buttonDeletarCompra.TabIndex = 8;
+            buttonDeletarCompra.Text = "Deletar Compra";
+            buttonDeletarCompra.UseVisualStyleBackColor = true;
+            buttonDeletarCompra.Click += buttonDeletarCompra_Click;
+            // 
+            // buttonNovaVenda
+            // 
+            buttonNovaVenda.Location = new Point(488, 56);
+            buttonNovaVenda.Name = "buttonNovaVenda";
+            buttonNovaVenda.Size = new Size(110, 23);
+            buttonNovaVenda.TabIndex = 9;
+            buttonNovaVenda.Text = "Nova Venda";
+            buttonNovaVenda.UseVisualStyleBackColor = true;
+            buttonNovaVenda.Click += buttonNovaVenda_Click;
+            // 
+            // buttonDeletarVenda
+            // 
+            buttonDeletarVenda.Location = new Point(488, 80);
+            buttonDeletarVenda.Name = "buttonDeletarVenda";
+            buttonDeletarVenda.Size = new Size(110, 23);
+            buttonDeletarVenda.TabIndex = 10;
+            buttonDeletarVenda.Text = "Deletar Venda";
+            buttonDeletarVenda.UseVisualStyleBackColor = true;
+            buttonDeletarVenda.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(610, 537);
+            Controls.Add(buttonDeletarVenda);
+            Controls.Add(buttonNovaVenda);
+            Controls.Add(buttonDeletarCompra);
+            Controls.Add(buttonNovaCompra);
+            Controls.Add(buttonDeletarCliente);
+            Controls.Add(buttonNovoCliente);
             Controls.Add(buttonVerVendas);
             Controls.Add(buttonVerCompras);
             Controls.Add(buttonVerFornecedores);
@@ -162,6 +236,8 @@
             ResumeLayout(false);
         }
 
+
+
         #endregion
 
         private Button buttonAdicionarProduto;
@@ -174,5 +250,12 @@
         private Button buttonVerVendas;
         private Button buttonAdicionarFornecedor;
         private Button buttonDeletarFornecedor;
+        private Button buttonNovoCliente;
+        private Button buttonDeletarCliente;
+        private Button buttonNovaCompra;
+        private Button buttonDeletarCompra;
+        private EventHandler buttonAdicionarFornecedores_Click;
+        private Button buttonNovaVenda;
+        private Button buttonDeletarVenda;
     }
 }

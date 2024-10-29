@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\givanio.melo\\Documents\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj": {}
+    "C:\\Users\\aluno.cad\\Downloads\\Aplicativo Com Multiplas Janelas (1)\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\givanio.melo\\Documents\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj": {
+    "C:\\Users\\aluno.cad\\Downloads\\Aplicativo Com Multiplas Janelas (1)\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\givanio.melo\\Documents\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj",
+        "projectUniqueName": "C:\\Users\\aluno.cad\\Downloads\\Aplicativo Com Multiplas Janelas (1)\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj",
         "projectName": "AplicativoComMultiplasJanelas",
-        "projectPath": "C:\\Users\\givanio.melo\\Documents\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj",
-        "packagesPath": "C:\\Users\\givanio.melo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\givanio.melo\\Documents\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas\\obj\\",
+        "projectPath": "C:\\Users\\aluno.cad\\Downloads\\Aplicativo Com Multiplas Janelas (1)\\AplicativoComMultiplasJanelas\\AplicativoComMultiplasJanelas.csproj",
+        "packagesPath": "C:\\Users\\aluno.cad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aluno.cad\\Downloads\\Aplicativo Com Multiplas Janelas (1)\\AplicativoComMultiplasJanelas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\givanio.melo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aluno.cad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

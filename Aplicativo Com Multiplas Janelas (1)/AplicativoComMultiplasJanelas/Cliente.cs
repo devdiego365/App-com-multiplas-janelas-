@@ -9,6 +9,7 @@ namespace AplicativoComMultiplasJanelas
 {
     public class Cliente
     {
+        public static int Count { get; internal set; }
         [DisplayName("Id")]
         public int Id { get; set; }
         [DisplayName("Nome do Cliente")]
